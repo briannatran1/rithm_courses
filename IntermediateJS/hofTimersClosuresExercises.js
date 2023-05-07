@@ -53,3 +53,21 @@ function randomGame(){
     }, 1000);
 }
 
+/*Write a function called isEven which takes in a number and returns true if the number is even and returns false if it is not*/
+
+function isEven(num){
+    return num % 2 === 0;
+}
+
+isEven(2); // true
+isEven(3); // false
+
+/*Write a function called isOdd which takes in a number and returns true if the number is odd and returns false if it is not*/
+
+function isOdd(num){
+    return num % 2 !== 0;
+}
+
+isOdd(3); // true
+isOdd(14); // false
+
