@@ -25,5 +25,14 @@ console.log(countdown(4));
 random number is picked, add 1 to a counter. If the number is greater than .75, stop the timer and return the number of tries 
 it took before we found a number greater than .75.*/
 function randomGame(){
-    
+    let num;
+    let count = 0;
+    let timer = setInterval(function(){
+        num = Math.random();
+        count++;
+        if(num > 0.75){
+            clearInterval(timer);
+            console.log("It took " + count + " try/tries.");
+        }
+    }, 1000);
 }
