@@ -71,3 +71,27 @@ function isOdd(num){
 isOdd(3); // true
 isOdd(14); // false
 
+/*Write a function called isPrime which takes in a number and returns true if the number is a prime number (is greater than 1 
+and can only be divided in whole by itself and 1), otherwise returns false*/
+
+//if number is less than 2,
+    //return false
+//iterate through num using for...loop
+    //if num is divisible by any number in that range,
+        //return false
+//return true
+
+function isPrime(num){
+    if(num < 2){
+        return false;
+    }
+    for(let i = 2; i < num; i++){
+        if(num % i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+isPrime(8); // false
+isPrime(17); // true
