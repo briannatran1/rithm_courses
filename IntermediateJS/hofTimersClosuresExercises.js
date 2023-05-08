@@ -102,3 +102,27 @@ number passed to it*/
 function numberFact(num, fn){
     return fn(num);
 }
+
+numberFact(59,isEven); // false
+numberFact(59,isOdd); // true
+numberFact(59,isPrime); // true
+
+/*Write a function called find. It should take in an array and a callback and return the first value found in the array that matches 
+the condition.*/
+
+//iterate through arr using for...of loop
+    //if val returns true when invoking callback function,
+        //return val
+    //else,
+        //return undefined
+
+function find(arr, fn){
+    for(let val of arr){
+        if(fn(val)){
+            return val;
+        }
+    }
+}
+
+find([8,11,4,27], function(val){return val >= 10}); // 11
+find([8,11,4,27], function(val){return val === 5}); // undefined
