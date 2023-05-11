@@ -52,7 +52,21 @@
         let newLi = document.createElement('li');
 
         /*Give the li the text “four”.*/
-        
+        newLi.innerText = 'four';
+
+        /*Append the li to the ul element.*/
+        let ul = document.querySelector('ul');
+        ul.appendChild(newLi);
+
+        /*Loop over all of the lis inside the ol tag and give them a background color of “green”.*/
+        let ol = document.querySelectorAll('ol li');
+        for(let i = 0; i < ol.length; i++){
+            ol[i].style.backgroundColor = 'green';
+        }
+
+        /*Remove the div with a class of footer.*/
+        let footer1 = document.querySelector('.footer');
+        footer1.remove();
     </script>
 </body>
 </html>
