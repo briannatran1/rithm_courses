@@ -33,6 +33,27 @@
         secondDiv.classList.add('another_class');
         secondDiv.classList.remove('hello');
 
+        let container = document.getElementById("container");
+        container.childNodes; // // this contains all of the nodes (including text nodes) that are children
+        container.childNodes.length; // 11
+        container.children; // this contains all of the elements that are children of the element we have selected
+        container.children.length; // 5
+
+        let link = document.querySelector("a");
+        link.parentElement; // <body id="container">...</body>
+        link.previousElementSibling; // <div class="hello">Hello Everyone!</div>
+        link.previousSibling; // text node
+        link.nextSibling; // text node
+        link.nextElementSibling; // <button>​Click me!​</button>​
+
+        //creating elements
+        let newDiv = document.createElement('div');
+
+        //changing multiple elements
+        let divs = document.querySelectorAll('div');
+        for(let i = 0; i < divs.length; i++){
+            divs[i].style.backgroundColor = 'red'
+        }
         
     </script>
 </body>
