@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button class="first_button">Click me first!</button>
+    <button class="second_button" >Click me second!</button>
+    <button class="third_button">Click me third!</button>
+
+    <script>
+        let buttons = document.getElementsByTagName('button');
+
+        function alertData(){
+            alert('You just clicked a button');
+        }
+
+        //adds alert
+        for(let i = 0; i < buttons.length; i++){
+            buttons[i].addEventListener('click', alertData);
+        }
+        
+        //removes alert
+        for(let i = 0; i < buttons.length; i++){
+            buttons[i].removeEventListener('click', alertData);
+        }
+
+    </script>
+</body>
+</html>
