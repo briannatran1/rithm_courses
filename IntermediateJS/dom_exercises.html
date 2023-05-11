@@ -31,8 +31,27 @@
 
         /*Select all of the list items with a class of “second”.*/
         document.getElementsByClassName('second');
+        document.querySelectorAll('.second');
 
         /*Select a list item with a class of third, but only the list item inside of the ol tag.*/
+        document.querySelector('ol .third');
+
+        /*Give the section with an id of container the text “Hello!”.*/
+        let foundDiv = document.querySelector('#container');
+        foundDiv.innerText = "Hello!";
+
+        /*Add the class main to the div with a class of footer.*/
+        let footerClass = document.querySelector('.footer');
+        footerClass.classList.add('main');
+
+        /*Remove the class main on the div with a class of footer.*/
+        let footer = document.querySelector('.footer');
+        footer.classList.remove('main');
+
+        /*Create a new li element.*/
+        let newLi = document.createElement('li');
+
+        /*Give the li the text “four”.*/
         
     </script>
 </body>
