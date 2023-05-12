@@ -16,7 +16,17 @@ window.onload = function(){
     let newDiv = document.createElement('div');
 
     /*Give your new div a class of purple and style it so that it has a background color of purple.*/
+    newDiv.className = 'purple';
+    newDiv.style.backgroundColor = 'purple';
+
+    /*Append your new div to the page to the section tag.*/
+    section.appendChild(newDiv);
+
+    /*Create a racing game with the two cars. When the race button is pressed, the two cars should move across the screen until one 
+    of them is at the end of the screen. When one of the blocks reaches the end – you should alert “winner!”*/
     
 }
+
+
 
 
