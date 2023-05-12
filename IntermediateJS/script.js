@@ -24,6 +24,9 @@ window.onload = function(){
 
     /*Create a racing game with the two cars. When the race button is pressed, the two cars should move across the screen until one 
     of them is at the end of the screen. When one of the blocks reaches the end – you should alert “winner!”*/
+    let car1 = document.querySelector('.car1');
+    let car2 = document.querySelector('.car2');
+
     
 }
 
