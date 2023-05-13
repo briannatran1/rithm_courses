@@ -18,12 +18,17 @@ function double(arr){
 /*Write a function called printFirstAndLast which accepts an array (of objects) and console.logs a new string with the first 
 character and the last character of each value.*/
 
-/**/ 
-
-//
+//declare str var 
+//iterate through arr using forEach 
+    //add first char and last char of str to str var
+    //console log str
 
 function printFirstAndLast(arr){
-
+    let str = '';
+    arr.forEach(function(str){
+        str = str[0] + str[str.length - 1];
+        console.log(str);
+    });
 }
 
 printFirstAndLast(['awesome','example','of','forEach'])
@@ -31,3 +36,12 @@ printFirstAndLast(['awesome','example','of','forEach'])
 // ee
 // of
 // fh
+
+/*Write a function called addKeyAndValue which accepts three parameters, an array (of objects), a key and a value. 
+This function should return the array of objects after each key and value have been added to each object in the array.*/
+
+/**/ 
+
+function addKeyAndValue(arr, key, val){
+
+}
