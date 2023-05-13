@@ -70,3 +70,25 @@ addKeyAndValue([{name: 'Elie'},{name: 'Tim'},{name: 'Elie'}], "isInstructor", tr
     }
 ]
 */
+
+/*Write a function called valTimesIndex which accepts an array of numbers and returns a new array with each value multiplied by 
+the index it is at in the array:*/
+
+function valTimesIndex(arr){
+    return arr.map(function(val, index){
+        return val * index;
+    });
+}
+
+valTimesIndex([1,2,3]) // [0,2,6]
+valTimesIndex([5,10,15]) // [0,10,30]
+
+/*Write a function called extractKey which accepts two parameters, an array of objects, and the name of a key and returns an 
+array with just the values for that key:*/
+
+function extractKey(arr, key){
+    
+}
+
+extractKey([{name: "Elie", isInstructor:true},{name: "Tim", isInstructor:true},{name: "Matt", isInstructor:true}], "name")
+// ["Elie", "Tim", "Matt"]
