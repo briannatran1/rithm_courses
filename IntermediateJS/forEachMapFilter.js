@@ -87,7 +87,9 @@ valTimesIndex([5,10,15]) // [0,10,30]
 array with just the values for that key:*/
 
 function extractKey(arr, key){
-    
+    return arr.map(function(obj){
+        return obj[key];
+    });
 }
 
 extractKey([{name: "Elie", isInstructor:true},{name: "Tim", isInstructor:true},{name: "Matt", isInstructor:true}], "name")
