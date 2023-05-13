@@ -121,7 +121,9 @@ filterLetters(["a","a","b","c","A"], "B"); // 1
 with only those objects which have truthy values for that key:*/
 
 function filterKey(arr, key){
-    
+    return arr.filter(function(obj){
+        return obj[key];
+    });
 }   
 
 filterKey([{name: "Elie", isInstructor:true, isHilarious: false},{name: "Tim", isInstructor:true, isHilarious: true},{name: "Matt", 
