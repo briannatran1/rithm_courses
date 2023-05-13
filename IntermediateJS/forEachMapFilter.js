@@ -42,6 +42,31 @@ This function should return the array of objects after each key and value have b
 
 /**/ 
 
-function addKeyAndValue(arr, key, val){
+//iterate through arr using forEach
+    //assign 'val' value to each key in obj
+//return modified arr
 
+function addKeyAndValue(arr, key, val){
+    arr.forEach(function(obj){
+        obj[key] = val;
+    });
+    return arr;
 }
+
+addKeyAndValue([{name: 'Elie'},{name: 'Tim'},{name: 'Elie'}], "isInstructor", true)
+/*
+[
+    {
+        name: 'Elie',
+        isInstructor: true
+    },
+    {
+        name: 'Tim',
+        isInstructor: true
+    },
+    {
+        name: 'Elie',
+        isInstructor: true
+    }
+]
+*/
