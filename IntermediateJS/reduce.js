@@ -22,6 +22,29 @@ extractKey([{name: "Elie", isInstructor:true},{name: "Tim", isInstructor:true},{
 /*Write a function called filterLetters which accepts an array of letters and returns the number of occurrences of a specific letter. 
 This function should be case insensitive*/
 
-function filterLetters(arr, letter){
+//convert target letter to lower case
+//use reduce method
+    //arguments => initialize acc (count) to 0, val
+    //convert val to lowercase
+    //if target letter and val are the same,
+        //increment count
+    //return count
 
+function filterLetters(arr, letter){
+    let lowerLetter = letter.toLowerCase();
+    return arr.reduce(function(count, val){
+        let lowerVal = val.toLowerCase();
+        if(lowerLetter === lowerVal){
+            count++;
+        }
+        return count;
+    }, 0);
+}
+
+/*Write a function called addKeyAndValue which accepts three parameters, an array (of objects), a key and a value. T
+his function should return the array of objects after each key and value has been added. You can do this a few ways, 
+either by reducing starting with an empty array and making copies of the object or by starting with the actual array!*/
+
+function addKeyAndValue(arr, key, value){
+    
 }
