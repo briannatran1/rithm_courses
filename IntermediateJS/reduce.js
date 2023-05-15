@@ -45,7 +45,10 @@ function filterLetters(arr, letter){
 his function should return the array of objects after each key and value has been added. You can do this a few ways, 
 either by reducing starting with an empty array and making copies of the object or by starting with the actual array!*/
 
-//
+//apply reduce method to arr. it accepts an accumulator (initialize to empty arr) and obj
+    //add key value pair 
+    //push key/value pair (obj) to acc which is an empty arr
+    //return acc
 
 function addKeyAndValue(arr, key, value){
     return arr.reduce(function(acc, obj){
