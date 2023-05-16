@@ -170,6 +170,8 @@ findByUsername(users, 'david');
 }
 /*/
 
+// PART 2
+
 /*Write a function called vowelCount that accepts a string and returns an object with each key being the vowel and the value 
 being the number of times the vowel occurs in the string (the order of keys in the object does not matter).*/
 
@@ -202,3 +204,34 @@ function vowelCount(str){
 
 vowelCount('incredible'); // {i:2, e: 2}
 vowelCount('awesome'); // {a:1, e:2, o:1}
+
+/*Write a function called removeVowels that accepts a string and returns an array of each character that is not a vowel 
+(y should not count as a vowel for this function).*/
+
+//use filter to return a new arr with only non-vowels
+
+//declare vowels var
+//split str into arr 
+//filter out vowels and return
+
+function removeVowels(str){
+    let vowels = 'aeiou';
+    let arr = str.split('');
+    return arr.filter(char => !vowels.includes(char));
+}
+
+//same as:
+
+function removeVowels(str) {
+    let vowels = 'aeiou';
+    let arr = str.split('');
+    return arr.filter(function(char) {
+        return !vowels.includes(char);
+    });
+  }
+
+removeVowels('amazing'); // ["m","z","n","g"]
+removeVowels('fun'); // ["f","n"]
+removeVowels('silly'); // ["s","l","l","y"]
+
+// PART 3
