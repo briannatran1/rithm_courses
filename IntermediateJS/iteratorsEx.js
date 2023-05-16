@@ -145,3 +145,27 @@ function hasFavoriteEditor(users, editor){
 
 hasFavoriteEditor(users, 'VS Code'); // true
 hasFavoriteEditor(users, 'Eclipse'); // false
+
+/*Write a function called findByUsername which takes in a string and returns an object in the users array that has that username*/
+function findByUsername(users, str){
+    let arr = Object.values(users);
+    return arr.find(function(user){
+        return user.username === str;
+    });
+}
+
+findByUsername(users, 'david');
+/*/
+{
+    username: "david",
+    email: "david@test.com",
+    years_experience: 12.5,
+    favorite_languages: ["JavaScript", "C#", "Swift"],
+    favorite_editor: "VS Code",
+    hobbies: ["Volunteering", "Biking", "Coding"],
+    hometown: {
+        city: "Los Angeles",
+        state: "CA"
+    }
+}
+/*/
