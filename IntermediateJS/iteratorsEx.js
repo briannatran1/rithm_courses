@@ -234,4 +234,3 @@ removeVowels('amazing'); // ["m","z","n","g"]
 removeVowels('fun'); // ["f","n"]
 removeVowels('silly'); // ["s","l","l","y"]
 
-// PART 3
