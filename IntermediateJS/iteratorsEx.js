@@ -169,3 +169,36 @@ findByUsername(users, 'david');
     }
 }
 /*/
+
+/*Write a function called vowelCount that accepts a string and returns an object with each key being the vowel and the value 
+being the number of times the vowel occurs in the string (the order of keys in the object does not matter).*/
+
+//declare vowels var
+//turn str into lower case and split into arr
+//filter only vowels
+//use reduce to get count vowels and create an obj 
+    //if char is already in acc obj
+        //increment count
+    //else,
+        //set val to 1
+    //return acc to update obj
+//return countObj
+
+function vowelCount(str){
+    let vowels = 'aeiou';
+    let arr = str.toLowerCase().split('');
+    let vowelArr = arr.filter(char => vowels.includes(char));
+    let countObj = vowelArr.reduce(function(acc, curr){
+        if(curr in acc){
+            acc[curr]++;
+        }
+        else{
+            acc[curr] = 1;
+        }
+        return acc;
+    }, {});
+    return countObj;
+}
+
+vowelCount('incredible'); // {i:2, e: 2}
+vowelCount('awesome'); // {a:1, e:2, o:1}
