@@ -1,0 +1,34 @@
+* {
+    font-family: Arial;
+}
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#nav {
+    width: 200px;
+    float: left;
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+#content {
+    margin-left: 220px;
+    text-align: center;
+    background-color: rgb(107, 176, 244);
+    padding: 20px;
+}
+
+#content li {
+    list-style-type: none;
+}
+
+.copyright{
+    width: 550px;
+    background-color: rgb(56, 104, 195);
+    text-align: center;
+    padding-left: 10px;
+    
+}
