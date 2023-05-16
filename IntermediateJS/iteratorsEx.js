@@ -96,11 +96,11 @@ printHobbies(users);
 function findHometownByState(users, state){
     let arr = Object.values(users);
     return arr.find(function(obj){
-        return obj.hometown.state === state;
+        return obj.hometown && obj.hometown.state === state;
     });
 }
 
-findHometownByState('CA');
+findHometownByState(users, 'CA');
 /*/
 {
     username: "larry",
@@ -132,3 +132,16 @@ function allLanguages(users){
 allLanguages(users);
 // ["Perl", "Scala", "C++","Haskell", "PHP","JavaScript","Ruby", "Python", "Go","C#", "F#", "Swift"]
 
+/*Write a function called hasFavoriteEditor which returns a boolean if any of the users have the editor passed in*/
+
+//'any of the users' -> some method
+
+function hasFavoriteEditor(users, editor){
+    let arr = Object.values(users);
+    return arr.some(function(user){
+        return user.favoriteEditor === editor;
+    });
+}
+
+hasFavoriteEditor(users, 'VS Code'); // true
+hasFavoriteEditor(users, 'Eclipse'); // false
