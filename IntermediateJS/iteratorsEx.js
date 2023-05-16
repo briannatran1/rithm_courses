@@ -64,13 +64,13 @@ let users = [
 ];
 
 /*Write a function called printEmails which console.log’s each email for the users.*/
-function printEmails(arr){
-    arr.forEach(function(email){
-        
+function printEmails(users){
+    users.forEach(function(obj){
+        console.log(obj.email);
     });
 }
 
-printEmails();
+printEmails(users);
 // larry@foo.com
 // jane@test.com
 // sam@test.com
