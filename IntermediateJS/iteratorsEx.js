@@ -76,3 +76,59 @@ printEmails(users);
 // sam@test.com
 // anne@test.com
 // david@test.com
+
+/*Write a function called printHobbies which console.log’s each hobby for each user.*/
+function printHobbies(users){
+    users.forEach(function(obj){
+        obj.hobbies.forEach(function(hobby){
+            console.log(hobby);
+        });
+    });
+}
+
+printHobbies(users);
+// "Fishing",
+// "Sailing",
+// "Hiking",
+// "Swimming", ...
+
+/*Write a function called findHometownByState which returns the first user which has a hometown of the state that is passed in*/
+function findHometownByState(users, state){
+    let arr = Object.values(users);
+    return arr.find(function(obj){
+        return obj.hometown.state === state;
+    });
+}
+
+findHometownByState('CA');
+/*/
+{
+    username: "larry",
+    email: "larry@foo.com",
+    years_experience: 22.1,
+    favorite_languages: ["Perl", "Scala", "C++"],
+    favorite_editor: "Vim",
+    hobbies: ["Fishing", "Sailing", "Hiking"],
+    hometown: {
+        city: "San Francisco",
+        state: "CA"
+    }
+}
+/*/
+
+/*Write a function called allLanguages which returns an array of all of the unique values*/
+function allLanguages(users){
+    let languages = [];
+    users.map(function(obj){
+        obj.favoriteLanguages.map(function(language){
+            if(!languages.includes(language)){
+                languages.push(language);
+            }
+        });
+    });
+    return languages;
+}
+
+allLanguages(users);
+// ["Perl", "Scala", "C++","Haskell", "PHP","JavaScript","Ruby", "Python", "Go","C#", "F#", "Swift"]
+
