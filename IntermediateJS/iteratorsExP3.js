@@ -1629,3 +1629,13 @@ function summerJamCount(songs){
     });
     return count;
 }
+
+// map
+
+/*Write a function called getDurations which takes in an array of songs and returns an array of each song's duration.*/
+function getDurations(songs){
+    return songs.map(function(song){
+        return song.duration;
+    });
+}
+
