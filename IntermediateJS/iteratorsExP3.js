@@ -1639,3 +1639,20 @@ function getDurations(songs){
     });
 }
 
+/*Write a function called getDurationInSeconds which takes in an array of songs and returns an array of each song's duration in seconds.*/
+
+//apply map to songs
+    //split duration of time by :
+    //declare var for min -> convert to number
+    //declare var for seconds -> convert to number
+    //multiply min by 60 and add seconds
+
+function getDurationInSeconds(songs){
+    return songs.map(function(song){
+        let durationNums = song.duration.split(':');
+        let min = Number((durationNums[0]));
+        let seconds = Number((durationNums[1]));
+        return (60 * min) + seconds;
+    });
+}
+
