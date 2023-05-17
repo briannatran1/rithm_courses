@@ -1670,3 +1670,10 @@ function getMainArtists(songs){
     });
 }
 
+// filter
+
+/*Write a function called getBigHits which takes an array of songs and returns an array of song objects which were number 
+one for 10 or more weeks.*/
+function getBigHits(songs){
+    return songs.filter(song => song.weeksAtNumberOne >= 10);
+}
