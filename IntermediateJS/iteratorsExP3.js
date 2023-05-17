@@ -1605,8 +1605,8 @@ function listNames(songs){
 
 /*Write a function called listSongDetails which takes in an array of songs and console.logs details about each one. 
 The details should be in the following example format: "Smooth, by Santana featuring Rob Thomas (4:00)".*/
-function listSongDetails(songs, song){
-    songs.forEach(function(obj){
-        
+function listSongDetails(songs){
+    songs.forEach(function(song){
+        console.log(song.name + ', by ' + song.artist + ' (' + song.duration + ')');
     });
 }
