@@ -1610,3 +1610,22 @@ function listSongDetails(songs){
         console.log(song.name + ', by ' + song.artist + ' (' + song.duration + ')');
     });
 }
+
+/*Write a function called summerJamCount which takes in an array of songs and returns the number of songs which hit #1 on the charts 
+in June, July, or August.*/
+
+//declare count var
+//iterate through each song using forEach 
+    //if month is between june and august (inclusive)
+        //increment count
+//return count
+
+function summerJamCount(songs){
+    let count = 0;
+    songs.forEach(function(song){
+        if(song.month >= 6 && song.month <= 8){
+            count++;
+        }
+    });
+    return count;
+}
