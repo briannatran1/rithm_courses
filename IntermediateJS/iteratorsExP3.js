@@ -1677,3 +1677,9 @@ one for 10 or more weeks.*/
 function getBigHits(songs){
     return songs.filter(song => song.weeksAtNumberOne >= 10);
 }
+
+/*Write a function called getShortSongs which takes an array of songs and returns an array of songs which are shorter than 3 minutes.*/
+function getShortSongs(songs){
+    return songs.filter(song => Number(song.duration[0]) < 3);
+}
+
