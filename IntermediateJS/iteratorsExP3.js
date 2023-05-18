@@ -1691,3 +1691,15 @@ function getSongsByArtist(songs, artist){
     });
 }
 
+// reduce
+
+/*Refactor summerJamCount to use reduce!*/
+function summerJamCount(songs){
+    return songs.reduce(function(count, song){ // count is the acc, song is the current song being iterated
+        if(song.month >= 6 && song.month <= 8){
+            count++;
+        }
+        return count; //update acc
+    }, 0);
+}
+
