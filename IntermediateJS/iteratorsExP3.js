@@ -1683,3 +1683,11 @@ function getShortSongs(songs){
     return songs.filter(song => Number(song.duration[0]) < 3);
 }
 
+/*Write a function called getSongsByArtist which takes in an array of songs and the name of an artist and returns an array 
+of songs by that artist.*/
+function getSongsByArtist(songs, artist){
+    return songs.filter(function(song){
+      return song.artist.match(artist);
+    });
+}
+
