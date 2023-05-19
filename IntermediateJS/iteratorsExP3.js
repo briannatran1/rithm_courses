@@ -1703,3 +1703,23 @@ function summerJamCount(songs){
     }, 0);
 }
 
+/*Write a function called getTotalDurationInSeconds which takes in an array of songs and returns the total amount of time (in seconds)
+it would take to listen to all of the songs. (Hint: can you use anything you've written already to help solve this problem?)*/
+function getTotalDurationInSeconds(songs){
+    return songs.reduce(function(time, song){
+        let durationNums = song.duration.split(':');
+        let min = Number((durationNums[0]));
+        let seconds = Number((durationNums[1]));
+        time += (60 * min) + seconds;
+        return time;
+    }, 0)
+}
+
+//or
+
+function getTotalDurationInSeconds(songs){
+    return getDurationInSeconds(songs).reduce(function(acc, next){
+        return acc + next
+    }, 0);
+}
+
