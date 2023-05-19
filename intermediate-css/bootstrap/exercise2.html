@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Part 2</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap Part 2</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 	<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -26,14 +26,14 @@
 					<a class="nav-link" href="#">About Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Messages <span class="badge badge-success">12</span></a>
+					<a class="nav-link" href="#">Messages <span class="badge badge-success"></span></a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
-	<div class="container">
-		<h1>Dashboard:</h1>
+	<div class="container-fluid">
+		<h1 class="my-4">Dashboard:</h1> <!-- my-4 applies vertical margins -->
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -77,8 +77,15 @@
 			</tbody>
 		</table>
 
-		<h1>Todos:</h1>
-
+		<h2 class="my-3">Todos:</h2>
+    <div class="list-group my-2">
+      <a href="#" class="list-group-item list-group-item-success">Feel good about Bootstrap</a>
+      <a href="#" class="list-group-item list-group-item-info">Feel informed about Bootstrap</a>
+      <a href="#" class="list-group-item list-group-item-warning">Feel warned about Bootstrap</a>
+      <a href="#" class="list-group-item list-group-item-warning">Maybe I should read the docs...</a>
+      <a href="#" class="list-group-item list-group-item-danger">Danger zone</a>
+      <a href="#" class="list-group-item list-group-item-danger">I really should read the docs...</a>
+    </div>
 	</div>
 </body>
 </html>
