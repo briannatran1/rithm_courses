@@ -1746,3 +1746,16 @@ function getSongCountByArtist(songs){
         return obj;
     }, {});
 }
+
+/*Write a function called averageWeeksAtNumberOne which takes in an array of songs and returns the average number of weeks that 
+songs on the list were #1.*/
+
+//iterate over each song using reduce on songs arr
+    //return acc added with weeksAtNumberOne 
+//after done iterating, divide by songs length
+
+function averageWeeksAtNumberOne(songs){
+    return songs.reduce(function(acc, song){
+        return acc + song.weeksAtNumberOne;
+    }, 0) / songs.length;
+}
