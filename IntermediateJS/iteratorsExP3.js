@@ -1723,3 +1723,26 @@ function getTotalDurationInSeconds(songs){
     }, 0);
 }
 
+/*Write a function called getSongCountByArtist which takes in an array of songs and returns an object. The keys in the object 
+should be artist names, and the values should be the number of songs by that artist in the orignal array.*/
+
+//apply reduce on songs arr. accepts obj as acc and song as current song
+    //declare artist var
+    //if artist is in the obj,
+        //increment
+    //else
+        //set val to 1
+    //return acc
+
+function getSongCountByArtist(songs){
+    return songs.reduce(function(obj, song){
+        let artist = song.artist;
+        if(artist in obj){
+            obj[artist]++;
+        }
+        else{
+            obj[artist] = 1;
+        }
+        return obj;
+    }, {});
+}
