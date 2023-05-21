@@ -2,23 +2,42 @@
     font-family: Arial;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #wrap {
     width: 800px;
     margin: 0 auto;
+    background-color:rgb(56, 104, 195);
+    padding-left: 37px;
 }
 
 #nav {
-    width: 200px;
+    width: 180px;
     float: left;
-    background-color: lightcyan;
-    padding: 10px;
+    background-color: rgb(172, 223, 255);
+    padding-top: 2%;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 252px;
+}
+
+#nav li {
+    margin-top: 0;
+}
+
+#nav h2 {
+    text-align: center;
 }
 
 #content {
-    margin-left: 220px;
     text-align: center;
     background-color: rgb(107, 176, 244);
-    padding: 20px;
+    padding-top: 2%;
+	margin: 0 2em 0 200px;
+    width: 550px;
 }
 
 #content li {
@@ -26,9 +45,8 @@
 }
 
 .copyright{
-    width: 550px;
+    clear: both;
     background-color: rgb(56, 104, 195);
     text-align: center;
-    padding-left: 10px;
-    
+    padding: 1em;
 }
