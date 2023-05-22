@@ -6,10 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mock 3</title>
   <style>
-    
+    body {
+      width: 99%;
+      margin: 0 auto;
+    }
+    div {
+      border: 3px solid black;
+    }
+    .col {
+      height: 300px;
+      width: 300px;
+      margin-left: 2.1%;
+      display: inline-block;
+    }
+    .heading {
+      background: green;
+      width: 99%;
+      height: 200px;
+      margin-bottom: 30px;
+    }
+    .col img {
+      height: inherit;
+    }
+    .col-left {
+      background: orange;
+    }
+    .col-mid {
+      background: red;
+    }
+    .col-right {
+      background: lightskyblue;
+    }
+    section {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-around;
+      margin-left: -150px;
+      margin-right: -100px;
+    }
   </style>
 </head>
 <body>
-  
+  <div class="heading"></div>
+  <section>
+    <div class="col col-left">
+      <img src="https://cdn-japantimes.com/wp-content/uploads/2016/03/n-fyi-b-20160315-200x200.jpg">
+    </div>
+    <div class="col col-mid">
+      <img src="https://cdn-japantimes.com/wp-content/uploads/2016/03/n-fyi-b-20160315-200x200.jpg">
+    </div>
+    <div class="col col-right">
+      <img src="https://cdn-japantimes.com/wp-content/uploads/2016/03/n-fyi-b-20160315-200x200.jpg">
+    </div>
+  </section>
+
+  <section>
+    <div class="col col-left"></div>
+    <div class="col col-mid"></div>
+    <div class="col col-right"></div>
+  </section>
 </body>
 </html>
