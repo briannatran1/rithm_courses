@@ -53,3 +53,15 @@ $(document).ready(function(){
     $('article').prepend($anotherParagraph);
 });
 
+$(document).ready(function(){
+    $(article).empty(); // remove all content inside article
+    $(article).remove(); // remove the article element itself from the DOM
+});
+
+// adding and removing events 
+$(document).ready(function(){
+    $('article').on('click', function(evt){
+        console.log($(evt.target).val()); // this works great
+        console.log(evt.target.val()); // TypeError -> evt.target isn't a jQuery obj
+    })
+});
