@@ -18,3 +18,9 @@ $(document).ready(function(){
     $('article').data('id', '1');
 });
 
+// traversing the DOM
+$(document).ready(function(){
+    let $childDivsInsideArticle = $('article').find('div').children();
+});
+
+// filtering
