@@ -24,3 +24,15 @@ $(document).ready(function(){
 });
 
 // filtering
+$(document).ready(function(){ // with js and jQuery
+    let $firstLi = $('li')[0];
+    $firstLi.innerText; // 'Item 1'
+});
+
+$(document).ready(function(){
+    let $firstLi = $('li').eq(0);
+    let $secondLi = $('li').eq(1);
+    $firstLi.text(); // 'Item 1'
+    $secondLi.text(); // 'Item 2'
+});
+
