@@ -36,3 +36,20 @@ $(document).ready(function(){
     $secondLi.text(); // 'Item 2'
 });
 
+// adding and removing elems from DOM
+$(document).ready(function(){
+    let $newParagraph = $('<p>');
+    $newParagraph.text('Another article');
+    $newParagraph.css('color', 'red');
+
+    let $anotherParagraph = $('<p>', {
+        text: 'Another approach',
+        css: {
+            color: 'purple',
+            'font-size': '2em' // we have to use quotes because of the '-'
+        }
+    });
+    $('article').append($newParagraph);
+    $('article').prepend($anotherParagraph);
+});
+
