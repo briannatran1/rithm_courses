@@ -8,9 +8,9 @@ $(document).ready(function() {
 
         // Add row to the table
         let row = $('<tr>');
-        row.append($('<td>').text(title));
-        row.append($('<td>').text(rating));
-        row.append($('<td>').html('<button class="delete-btn btn btn-danger">Delete</button>'));
+        row.append($('<td class="text-center">').text(title));
+        row.append($('<td class="text-center">').text(rating));
+        row.append($('<td class="text-center">').html('<button class="delete-btn btn btn-danger">Delete</button>'));
 
         $('#list-table tbody').append(row);
 
